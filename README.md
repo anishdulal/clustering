@@ -77,6 +77,7 @@ Scaling was done to prevent the biased impact of different features on clusterin
 ## K means
 ### Choosing k
 1. Elbow method
+<p>
 <!-- ![](images/elbow.png) -->
 <p float="center">
   <img src="images/elbow.png" width="500" />
@@ -86,10 +87,10 @@ number of clusters. We will choose that number of the cluster that brings maximu
 deviation in the sum of square distance. This method is known as the elbow method.
 The sum of square error goes on decreasing as the number of clusters increases, but we
 choose that k that gives maximum deviation. With this method, in this plot, we can’t be
-sure about the value of k so, we try another approach.
+sure about the value of k so, we try another approach.</p>
 
 2. Silhouette score
-The Silhouette Coefficient is calculated using the mean intra-cluster distance and the
+<p>The Silhouette Coefficient is calculated using the mean intra-cluster distance and the
 mean nearest-cluster distance for each sample. The best value is 1 and the worst valueis -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that
 a sample has been assigned to the wrong cluster, as a different cluster is more similar.
 
@@ -97,7 +98,7 @@ a sample has been assigned to the wrong cluster, as a different cluster is more 
 <img src="images/silhouette.png" width="500" />
 
 As the Silhouette score is maximum when the number of clusters is equal to 4 (0.3754),
-we take k = 4.
+we take k = 4.</p>
 
 ### Visualization of clusters using PCA
 ![]()

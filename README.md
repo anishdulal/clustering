@@ -77,7 +77,9 @@ Scaling was done to prevent the biased impact of different features on clusterin
 ## K means
 ### Choosing k:
 ![](images/elbow.png)
-
+<p float="center">
+  <img src="images/elbow.png" width="100" />
+</p>
 We plot the Sum of squared distances of samples to their closest cluster center vs the
 number of clusters. We will choose that number of the cluster that brings maximum
 deviation in the sum of square distance. This method is known as the elbow method.

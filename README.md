@@ -57,14 +57,17 @@ All the data in literacy-rates.csv were for the year 2013. So we dropped the ‘
 was not useful for clustering. Similarly, the ‘Total’ column was the average of ‘Male’ and
 ‘Female’ literacy rate. So, it didn’t provide any additional information for clustering and we
 dropped that too.
+
 The life-expectancy-income.csv file had one null column as Unnamed: 3, we dropped that. Per
 Capita Income was in string format, we changed it to a floating-point number.
 We now merged two data frames into one of shape (75,5). The columns selected for features
 are Female Literacy Rate, Male Literacy Rate, Life expectancy(In Years) and Per Capita
 Income(In USD) for each of 75 districts.
+
 During data analysis and visualization, we observed that the selected columns have different
 values for different districts, so they affect the way clustering happens, which was the reason to
 choose these features for our model.
+
 We standardized features by removing the mean and scaling to unit variance as:
 Z = (x-mean)/standard deviation
 
@@ -74,6 +77,7 @@ Scaling was done to prevent the biased impact of different features on clusterin
 ## K means
 ### Choosing k:
 ![](images/elbow.png)
+
 We plot the Sum of squared distances of samples to their closest cluster center vs the
 number of clusters. We will choose that number of the cluster that brings maximum
 deviation in the sum of square distance. This method is known as the elbow method.

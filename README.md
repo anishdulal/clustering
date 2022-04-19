@@ -75,7 +75,8 @@ Scaling was done to prevent the biased impact of different features on clusterin
 
 # Clustering
 ## K means
-### Choosing k:
+### Choosing k
+1. Elbow method
 <!-- ![](images/elbow.png) -->
 <p float="center">
   <img src="images/elbow.png" width="500" />
@@ -86,3 +87,22 @@ deviation in the sum of square distance. This method is known as the elbow metho
 The sum of square error goes on decreasing as the number of clusters increases, but we
 choose that k that gives maximum deviation. With this method, in this plot, we can’t be
 sure about the value of k so, we try another approach.
+
+2. Silhouette score
+The Silhouette Coefficient is calculated using the mean intra-cluster distance and the
+mean nearest-cluster distance for each sample. The best value is 1 and the worst valueis -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that
+a sample has been assigned to the wrong cluster, as a different cluster is more similar.
+
+![](images/silhouette.png)
+
+As the Silhouette score is maximum when the number of clusters is equal to 4 (0.3754),
+we take k = 4.
+
+### Visualization of clusters using PCA
+![]()
+
+![]()
+
+Kmeans classified 38 districts to be class 0, 12 districts to be class 1, 23 districts to be
+class 2 and 3 districts to be class 3. Kmeans is found to be working well on this data
+while analyzing the data manually.

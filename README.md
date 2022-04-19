@@ -27,3 +27,10 @@ Frequency distribution of Male Literacy Rate             |  Frequency distributi
 
 From this plot, we can analyze that more number of males are literate compared to females.
 The range of rate for males is 50-90% while for females it is 35-80%.
+
+On further analysis, we found that almost 75 % of males are literate while only 56% of females
+are literate.
+
+Distribution of Per Capita Income            |  Frequency distribution of Life expectancy
+:-------------------------:|:-------------------------:
+![](images/per_capita.png)  |  ![](images/life_expectancy.png)

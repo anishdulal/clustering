@@ -23,7 +23,7 @@ Frequency distribution of Male Literacy Rate             |  Frequency distributi
 :-------------------------:|:-------------------------:
 ![male](images/male_literacy.png)  |  ![female](images/female_literacy.png)
 
-<center>Fig. Frequency distribution of male and female literacy rates</center>
+<p align=center>Fig. Frequency distribution of male and female literacy rates</p>
 
 From this plot, we can analyze that more number of males are literate compared to females.
 The range of rate for males is 50-90% while for females it is 35-80%.

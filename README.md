@@ -93,7 +93,7 @@ The Silhouette Coefficient is calculated using the mean intra-cluster distance a
 mean nearest-cluster distance for each sample. The best value is 1 and the worst valueis -1. Values near 0 indicate overlapping clusters. Negative values generally indicate that
 a sample has been assigned to the wrong cluster, as a different cluster is more similar.
 
-![](images/silhouette.png)
+![](images/silhouette.png, width=500)
 
 As the Silhouette score is maximum when the number of clusters is equal to 4 (0.3754),
 we take k = 4.

@@ -76,7 +76,7 @@ Scaling was done to prevent the biased impact of different features on clusterin
 # Clustering
 ## K means
 ### Choosing k:
-![](images/elbow.png)
+<!-- ![](images/elbow.png) -->
 <p float="center">
   <img src="images/elbow.png" width="500" />
 </p>

@@ -141,8 +141,8 @@ The number of iterations required for expectation maximization was found to be 1
 From the plot below, we can see the Gaussian Mixture Model has worked well on this
 data.
 ### Visualization of clusters using PCA
-![gmm clusters](gmm.png)<br>
-![label and number of districts in each cluster](gmm_.png)
+![gmm clusters](images/gmm.png)<br>
+![label and number of districts in each cluster](images/gmm_.png)
 <br>
 Gmm has classified 41 districts of cluster 0, 18 of cluster 1, 2 as cluster 2 and 14 as
 cluster 3. From the plot also, it is found to be working well.

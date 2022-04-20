@@ -128,7 +128,9 @@ values. When we choose<br>
 it clustered given data into 4 clusters. With these values of eps and min_samples also, it
 clustered the majority of points to be outliers. But these values were best among the values
 tried by me.
+
 ### Visualization of clusters using PCA
+
 ![dbscan clusters](images/dbscan.png)<br>
 <!-- ![label and number of districts in each cluster](dbscan_.png) -->
 <img src="images/dbscan_.png" width="250" /><br>

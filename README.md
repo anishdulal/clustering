@@ -105,7 +105,7 @@ we take k = 4.</p>
 ![kmeans clusters](images/kmeans.png)<br>
 
 <!-- ![label and number of districts in each cluster](images/kmeans_.png) -->
-<img src="images/kmeans_.png" width="200" />
+<img src="images/kmeans_.png" width="250" />
 
 Kmeans classified 38 districts to be class 0, 12 districts to be class 1, 23 districts to be
 class 2 and 3 districts to be class 3. Kmeans is found to be working well on this data
@@ -129,9 +129,9 @@ it clustered given data into 4 clusters. With these values of eps and min_sample
 clustered the majority of points to be outliers. But these values were best among the values
 tried by me.
 ### Visualization of clusters using PCA
-![dbscan clusters](dbscan.png)<br>
+![dbscan clusters](images/dbscan.png)<br>
 <!-- ![label and number of districts in each cluster](dbscan_.png) -->
-<img src="images/dbscan_.png" width="300" />
+<img src="images/dbscan_.png" width="250" /><br>
 DBSCAN has classified 32 districts as outliers, 29 districts as cluster 0, 3 districts as cluster
 1, 8 districts as cluster 2 and 3 districts as cluster 3. As dbscan has classified the majority of
 points as outliers, it is not working well in this dataset.
@@ -144,7 +144,8 @@ From the plot below, we can see the Gaussian Mixture Model has worked well on th
 data.
 ### Visualization of clusters using PCA
 ![gmm clusters](images/gmm.png)<br>
-![label and number of districts in each cluster](images/gmm_.png)
+<!-- ![label and number of districts in each cluster](images/gmm_.png) -->
+<img src="images/gmm_.png" width="250" />
 <br>
 Gmm has classified 41 districts of cluster 0, 18 of cluster 1, 2 as cluster 2 and 14 as
 cluster 3. From the plot also, it is found to be working well.

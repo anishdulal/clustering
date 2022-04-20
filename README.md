@@ -102,10 +102,24 @@ a sample has been assigned to the wrong cluster, as a different cluster is more 
 we take k = 4.</p>
 
 ### Visualization of clusters using PCA
-![]()
+![kmeans clusters](images/kmeans.png)
 
-![]()
+![label and number of districts in each cluster](images/kmeans_.png)
 
 Kmeans classified 38 districts to be class 0, 12 districts to be class 1, 23 districts to be
 class 2 and 3 districts to be class 3. Kmeans is found to be working well on this data
 while analyzing the data manually.
+
+## DBSCAN
+The suggested value of min_samples was a number of dimensions of our data plus 1.
+For our data, the number of dimensions is 4. So we tried min_sampes = 5. But this
+classified some points to be of one cluster and all others as outliers. So I tried other
+values.
+
+### Using k-neighbors to choose the value of epsilon:
+![](images/epsilon.png)<br>
+From the above plot, we need to take the value of k to be 0.9 but this classified all the points
+to be of the same clusters and outliers. As these values didn’t work well so I tried random
+values. When we choose
+**min_samples = 3,\\
+  eps = 0.7,**

@@ -102,7 +102,7 @@ a sample has been assigned to the wrong cluster, as a different cluster is more 
 we take k = 4.</p>
 
 ### Visualization of clusters using PCA
-![kmeans clusters](images/kmeans.png)
+![kmeans clusters](images/kmeans.png)<br>
 
 ![label and number of districts in each cluster](images/kmeans_.png)
 
@@ -117,9 +117,40 @@ classified some points to be of one cluster and all others as outliers. So I tri
 values.
 
 ### Using k-neighbors to choose the value of epsilon:
-![](images/epsilon.png)<br>
+<!-- ![](images/epsilon.png)<br> -->
+<img src="images/epsilon.png" width="500" />
 From the above plot, we need to take the value of k to be 0.9 but this classified all the points
 to be of the same clusters and outliers. As these values didn’t work well so I tried random
-values. When we choose
-**min_samples = 3,\\
-  eps = 0.7,**
+values. When we choose<br>
+**min_samples = 3,<br>
+  eps = 0.7,**<br>
+it clustered given data into 4 clusters. With these values of eps and min_samples also, it
+clustered the majority of points to be outliers. But these values were best among the values
+tried by me.
+### Visualization of clusters using PCA
+![dbscan clusters](dbscan.png)<br>
+![label and number of districts in each cluster](dbscan_.png)
+DBSCAN has classified 32 districts as outliers, 29 districts as cluster 0, 3 districts as cluster
+1, 8 districts as cluster 2 and 3 districts as cluster 3. As dbscan has classified the majority of
+points as outliers, it is not working well in this dataset.
+
+## GMM
+From the knowledge of the number of clusters from kmeans(having maximum Silhouette
+score), I selected the number of components to be 4 in the Gaussian Mixture Model.
+The number of iterations required for expectation maximization was found to be 16.<br>
+From the plot below, we can see the Gaussian Mixture Model has worked well on this
+data.
+### Visualization of clusters using PCA
+![gmm clusters](gmm.png)<br>
+![label and number of districts in each cluster](gmm_.png)
+<br>
+Gmm has classified 41 districts of cluster 0, 18 of cluster 1, 2 as cluster 2 and 14 as
+cluster 3. From the plot also, it is found to be working well.
+
+## Conclusion
+The plot of data does not seem to be spherical. As kmeans clusters data based on the distance
+metric, it doesn’t work perfectly even though it has performed well by clustering Manang and
+Kathmandu as different districts. DBSCAN has detected the majority of districts as outliers so it
+may not be the best model. Giving attention to the non-spherical shape of data for kmeans and
+the number of outliers, the difficulty of parameter tuning in DBSCAN, GMM has found to work
+best which can also be seen from the plot.

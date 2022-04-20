@@ -1,5 +1,5 @@
 # Clustering-on-HDI-Dataset
-
+You can try it on your own by running this [notebook](HDI.ipynb)
 ## Abstract
 <p>Three types of clustering K-means, DBSCAN and GMM were performed on the HDI(Human
 Development Index) dataset. Tuning of parameters was difficult in the case of DBSCAN so, it
